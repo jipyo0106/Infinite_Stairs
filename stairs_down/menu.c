@@ -1,7 +1,4 @@
 #include "console.h"
-#include "db_ui.h"
-#include "ui.h"
-#include "game_process.h"
 #include <conio.h>
 
 void howControl(void) {

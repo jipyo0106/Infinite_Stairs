@@ -1,7 +1,7 @@
 #include "console.h"
-#include "game_process.h"
-#include "ui.h"
-#include "db.h"
+// #include "game_process.h"
+// #include "ui.h"
+#include "db_ui.h"
 
 int main(void)
 {

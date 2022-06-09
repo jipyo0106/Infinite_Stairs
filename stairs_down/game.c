@@ -1,5 +1,7 @@
 #include "game_process.h"
-#include "db.h"
+
+extern int getUserBestScore(void);
+extern void gotoxy(int, int);
 
 int game(void)
 {
@@ -20,7 +22,9 @@ int game(void)
 		stair_print();
 		now_score_print();
 		gotoxy(22, 1);
+		SetColor(GREEN);
 		stair_ == -2 ? printf("→") : printf("←");
+		SetColor(WHITE);
 
 	} while (1);
 	gameOver();
@@ -114,7 +118,9 @@ void first_game_process(void)
 
 	// 계단 진행 방향 출력
 	gotoxy(22, 1);
+	SetColor(GREEN);
 	printf("→");
+	SetColor(WHITE);
 
 	// 계단 출력
 	stair_print();

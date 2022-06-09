@@ -1,5 +1,4 @@
-#include "game_process.h"
-#include "db.h"
+extern int score;
 
 void gameOver(void)
 {

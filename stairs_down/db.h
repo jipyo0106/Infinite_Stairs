@@ -15,7 +15,6 @@ MYSQL_ROW sql_row;
 
 char loginId[20];
 
-void mysql_init_setting(void);
 MYSQL* DBConnection(void);
 
 int checkID(char *);

@@ -1,4 +1,3 @@
-#include "db.h"
 #include "db_ui.h"
 #include "console.h"
 #include <conio.h>
@@ -42,6 +41,10 @@ void login_registe_select_UI(void)
 			}
 			else if (select == ENTER) {
 				break;
+			}
+			else if (select == ESC){
+				system("cls");
+				exit(0);
 			}
 
 		} while (1);
