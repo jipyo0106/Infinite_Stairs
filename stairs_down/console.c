@@ -1,4 +1,3 @@
-#pragma once
 #include "console.h"
 
 void gotoxy(int x, int y)

@@ -155,7 +155,7 @@ int getUserBestScore(void)
 	sql_row = mysql_fetch_row(sql_result);
 
 	int bestScore_ = charsToInt(sql_row[0]);
-
+	Sleep(2000);
 	mysql_close(connection);
 	return bestScore_;
 }
@@ -168,7 +168,7 @@ int getUserBestScore(void)
 int charsToInt(char * intStr)
 {
 	int tempScore = 0,
-		len = sizeof(intStr) / 4;
+		len = strlen(intStr);
 
 	for (int i = 0; i < len; i++) {
 		int digit = 1;
